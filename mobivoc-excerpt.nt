@@ -16,3 +16,4 @@
 <https://ns.eccenca.com/eccenca-GmbH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <https://ns.eccenca.com/eccenca-GmbH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
 <http://quit.instance/www.fid-move.de/vocabulary/trtTermInfo> a <http://www.w3.org/2002/07/owl#Class> .
+<http://quit.instance/www.fid-move.de/vocabulary/trtTermInfo> a <http://www.w3.org/2002/07/owl#Class> .
