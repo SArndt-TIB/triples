@@ -1,0 +1,28 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://onto.tib.eu/ost> .
+
+<https://onto.tib.eu/ost> a owl:Ontology ; owl:imports skos: .
+
+<https://onto.tib.eu/ost/OpenScholarshipMethods>
+  skos:prefLabel "Open scholarship methods"@en ;
+  a skos:Concept ;
+  skos:narrower <https://onto.tib.eu/ost/BookSprints> ;
+  skos:narrowerTransitive <https://onto.tib.eu/ost/BookSprints> .
+
+<https://onto.tib.eu/ost/BookSprints>
+  skos:broader <https://onto.tib.eu/ost/OpenScholarshipMethods> ;
+  skos:broaderTransitive <https://onto.tib.eu/ost/OpenScholarshipMethods>, <https://onto.tib.eu/ost/Methods> ;
+  skos:inScheme <https://onto.tib.eu/ost/> ;
+  skos:prefLabel "Book sprints"@en ;
+  a skos:Concept .
+
+<https://onto.tib.eu/ost/Methods>
+  skos:prefLabel "Methods"@en ;
+  a skos:Concept ;
+  skos:narrowerTransitive <https://onto.tib.eu/ost/BookSprints> .
+
+<https://onto.tib.eu/ost/>
+  rdfs:label "Open Science Taxonomy"@en ;
+  a skos:ConceptScheme .
+
