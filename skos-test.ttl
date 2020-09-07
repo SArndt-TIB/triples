@@ -12,6 +12,7 @@
 
 <https://onto.tib.eu/ost/BookSprints>
   skos:broader <https://onto.tib.eu/ost/OpenScholarshipMethods> ;
+  a <https://onto.tib.eu/ost/OpenScholarshipMethods> ;
   skos:broaderTransitive <https://onto.tib.eu/ost/OpenScholarshipMethods>, <https://onto.tib.eu/ost/Methods> ;
   skos:inScheme <https://onto.tib.eu/ost/> ;
   skos:prefLabel "Book sprints"@en ;
