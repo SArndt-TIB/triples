@@ -16,7 +16,7 @@
   skos:broaderTransitive <https://onto.tib.eu/ost/OpenScholarshipMethods>, <https://onto.tib.eu/ost/Methods> ;
   skos:inScheme <https://onto.tib.eu/ost/> ;
   skos:prefLabel "Book sprints"@en ;
-  a skos:Concept ;
+  a skos:Concept, rdfs:Class ;
   owl:sameAs <https://www.wikidata.org/wiki/Q2910464>.
 
 <https://onto.tib.eu/ost/Methods>
