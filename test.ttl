@@ -1,6 +1,6 @@
 @prefix pachl: <https://www.fid-move.de/vocabulary/pachl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://www.fid-move.de/vocabulary/pachl#> .
+@base <https://www.fid-move.de/vocabulary/pachl> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix sc: <http://schema.org/> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -11,12 +11,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://www.fid-move.de/vocabulary/pachl#> rdf:type owl:Ontology ; owl:imports skos: .
+<https://www.fid-move.de/vocabulary/pachl> rdf:type owl:Ontology ; owl:imports skos: .
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Concept779
 pachl:Concept779 rdf:type owl:NamedIndividual ,
                      skos:Concept ;
-            skos:inScheme <https://www.fid-move.de/vocabulary/pachl#> ;
+            skos:inScheme <https://www.fid-move.de/vocabulary/pachl> ;
             #fidvocs:dateOfSource "2019-06-30"^^xsd:date ;
             rdfs:label "frog"@en ;
             skos:definition "The part of a turnout, a crossing, or a gantlet, where the rails have an intersection which allows the wheel flanges to cross the running rail."@en .
