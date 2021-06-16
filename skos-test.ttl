@@ -1,33 +1,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://onto.tib.eu/ost> .
+@base <http://purl.org/triplestest> .
+@prefix tritest: <http://purl.org/triplestest>
 
-<https://onto.tib.eu/ost> a owl:Ontology ; owl:imports skos: .
+tritest: a owl:Ontology.
 
-skos:exactMatch a owl:AnnotationProperty .
-
-<https://onto.tib.eu/ost/OpenScholarshipMethods>
-  skos:prefLabel "Open scholarship methods"@en ;
-  a skos:Concept ;
-  skos:narrower <https://onto.tib.eu/ost/BookSprints> ;
-  skos:narrowerTransitive <https://onto.tib.eu/ost/BookSprints> .
-
-<https://onto.tib.eu/ost/BookSprints>
-  skos:broader <https://onto.tib.eu/ost/OpenScholarshipMethods> ;
-  a <https://onto.tib.eu/ost/OpenScholarshipMethods> ;
-  skos:broaderTransitive <https://onto.tib.eu/ost/OpenScholarshipMethods>, <https://onto.tib.eu/ost/Methods> ;
-  skos:inScheme <https://onto.tib.eu/ost/> ;
-  skos:prefLabel "Book sprints"@en ;
-  a skos:Concept, rdfs:Class ;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q2910464>;
-rdfs:comment "DCATは、ウェブ上で公開されたデータ・カタログ間の相互運用性の促進を目的とするRDFの語彙です。このドキュメントでは、その利用のために、スキーマを定義し、例を提供します。データ・カタログ内のデータセットを記述するためにDCATを用いると、公開者が、発見可能性を増加させ、アプリケーションが複数のカタログのメタデータを容易に利用できるようになります。さらに、カタログの分散公開を可能にし、複数のサイトにまたがるデータセットの統合検索を促進します。集約されたDCATメタデータは、ディジタル保存を促進するためのマニフェスト・ファイルとして使用できます。"@ja.
-
-<https://onto.tib.eu/ost/Methods>
-  skos:prefLabel "Methods"@en ;
-  a skos:Concept ;
-  skos:narrowerTransitive <https://onto.tib.eu/ost/BookSprints> .
-
-<https://onto.tib.eu/ost/>
-  rdfs:label "Open Science Taxonomy"@en ;
-  a skos:ConceptScheme .
-
+tritest:Class a owl:Class ;
+rdfs:comment "Hallo!"@de .
