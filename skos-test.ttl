@@ -3,7 +3,7 @@
 @base <http://purl.org/triplestest/duck> .
 @prefix tritest: <http://purl.org/triplestest/duck#> .
 
-tritest: a owl:Ontology.
+<http://purl.org/triplestest/duck> a owl:Ontology.
 
 tritest:Class a owl:Class ;
 rdfs:comment "Hallo!"@de .
