@@ -1,7 +1,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/triplestest> .
-@prefix tritest: <http://purl.org/triplestest#>
+@base <http://purl.org/triplestest/duck> .
+@prefix tritest: <http://purl.org/triplestest/duck#>
 
 tritest: a owl:Ontology.
 
