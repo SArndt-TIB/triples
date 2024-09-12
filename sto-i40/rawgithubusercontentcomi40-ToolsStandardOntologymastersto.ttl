@@ -13649,7 +13649,7 @@ sto:irlan rdf:type owl:NamedIndividual ,
                    foaf:Person ;
           rdfs:label "Irlan Grangel"^^xsd:string ;
           foaf:familyName "Grangel"^^xsd:string ;
-          foaf:mbox "irlangrangel2003@gmail.com"^^xsd:anyURI ;
+          foaf:mbox <irlangrangel2003@gmail.com> ;
           foaf:name "Irlan"^^xsd:string .
 
 
