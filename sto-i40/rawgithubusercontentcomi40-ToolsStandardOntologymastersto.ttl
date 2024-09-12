@@ -56,7 +56,7 @@
 #################################################################
 
 ###  http://creativecommons.org/ns#attributionURL
-cc:attributionURL rdf:type owl:AnnotationProperty .
+# cc:attributionURL rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
@@ -219,7 +219,7 @@ foaf:familyName rdf:type owl:AnnotationProperty ;
 
 
 ###  http://xmlns.com/foaf/0.1/mbox
-foaf:mbox rdf:type owl:AnnotationProperty ;
+foaf:mbox rdf:type owl:ObjectProperty  ;
           rdfs:label "mbox"@en .
 
 
@@ -272,7 +272,7 @@ foaf:familyName rdf:type owl:AnnotationProperty ;
 sto:seeAlso rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/mbox
-foaf:mbox rdf:type owl:AnnotationProperty ;
+foaf:mbox rdf:type owl:ObjectProperty  ;
           rdfs:label "mbox"@en .
 
 
@@ -863,7 +863,7 @@ sto:hasTask rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/i40/sto#hasWikipediaArticle
-sto:hasWikipediaArticle rdf:type owl:DatatypeProperty .
+# sto:hasWikipediaArticle rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/i40/sto#orgName
