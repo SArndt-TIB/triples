@@ -1407,7 +1407,7 @@ dfgfo:45 a owl:Class , skos:Concept;
     skos:prefLabel "Bauwesen und Architektur"@de,
         "Construction Engineering and Architecture"@en .
 
-dfgfo:1 a owl:Class , skos:Concept;
+dfgfo:1 a owl:Class , skos:Concept, owl:Thing;
     rdfs:subClassOf owl:Thing ;
     skos:narrower dfgfo:12 ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/1> ;
