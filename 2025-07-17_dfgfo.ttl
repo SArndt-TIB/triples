@@ -1631,8 +1631,12 @@ dfgfo:45 a owl:Class ;
     skos:prefLabel "Bauwesen und Architektur"@de,
         "Construction Engineering and Architecture"@en .
 
+dfgfo:Subject a owl:Class .
+
 dfgfo:1 a owl:Class ;
     # rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf dfgfo:Subject ;
+    a dfgfo:Subject ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/1> ;
     skos:prefLabel "Geistes- und Sozialwissenschaften"@de,
         "Humanities and Social Sciences"@en .
@@ -1751,6 +1755,8 @@ dfgfo:118 a owl:Class ;
 
 dfgfo:2 a owl:Class ;
     # rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf dfgfo:Subject ;
+    a dfgfo:Subject ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/2> ;
     skos:prefLabel "Lebenswissenschaften"@de,
         "Life Sciences"@en .
@@ -1813,6 +1819,8 @@ dfgfo:123 a owl:Class ;
 
 dfgfo:3 a owl:Class ;
     # rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf dfgfo:Subject ;
+    a dfgfo:Subject ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/3> ;
     skos:prefLabel "Naturwissenschaften"@de,
         "Natural Sciences"@en .
@@ -1889,6 +1897,8 @@ dfgfo:32 a owl:Class ;
 
 dfgfo:4 a owl:Class ;
     # rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf dfgfo:Subject ;
+    a dfgfo:Subject ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/4> ;
     skos:prefLabel "Ingenieurwissenschaften"@de,
         "Engineering Sciences"@en .
