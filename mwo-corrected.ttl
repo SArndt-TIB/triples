@@ -3344,13 +3344,13 @@ E.g. \"steel\", \"aluminium\", \"wood\", \"plastic\", \"rubber\".""" ;
 
 
 ###  http://purls.helmholtz-metadaten.de/mwo/PoissonsRatio
-<http://purls.helmholtz-metadaten.de/mwo/Poisson'sRatio> rdf:type owl:NamedIndividual ,
+<http://purls.helmholtz-metadaten.de/mwo/PoissonsRatio> rdf:type owl:NamedIndividual ,
                                                                   :MechanicalProperty ;
                                                          rdfs:label "Poisson's ratio"@en .
 
 
 ###  http://purls.helmholtz-metadaten.de/mwo/YoungsModulus
-<http://purls.helmholtz-metadaten.de/mwo/Young'sModulus> rdf:type owl:NamedIndividual ,
+<http://purls.helmholtz-metadaten.de/mwo/YoungsModulus> rdf:type owl:NamedIndividual ,
                                                                   :MechanicalProperty ;
                                                          rdfs:label "Young's modulus"@en .
 
