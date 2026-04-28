@@ -13,7 +13,7 @@
 @base <https://si-digital-framework.org/constants/> .
 
 <https://si-digital-framework.org/constants/> rdf:type owl:Ontology ;
-                                               owl:imports si: ;
+                                               owl:imports <https://github.com/TheBIPM/SI_Digital_Framework/raw/refs/heads/main/knowledge_graphs/SI_Reference_Point/si.ttl> ;
                                                dcterms:license <https://creativecommons.org/licenses/by/3.0/igo/> ;
                                                rdfs:comment """L'ontologie SI Reference Point developpée par le BIPM est sous
 licence CC-BY-3.0-IGO. Vous êtes autorisés à partager (copier, distribuer et communiquer
