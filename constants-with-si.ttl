@@ -1,0 +1,264 @@
+@prefix : <https://si-digital-framework.org/constants/> .
+@prefix si: <https://si-digital-framework.org/SI#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix units: <https://si-digital-framework.org/SI/units/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix constants: <https://si-digital-framework.org/constants/> .
+@base <https://si-digital-framework.org/constants/> .
+
+<https://si-digital-framework.org/constants/> rdf:type owl:Ontology ;
+                                               owl:imports si: ;
+                                               dcterms:license <https://creativecommons.org/licenses/by/3.0/igo/> ;
+                                               rdfs:comment """L'ontologie SI Reference Point developpée par le BIPM est sous
+licence CC-BY-3.0-IGO. Vous êtes autorisés à partager (copier, distribuer et communiquer
+le matériel par tous moyens et sous tous formats) et adapter (remixer, transformer
+et créer à partir du matériel) pour toute utilisation, y compris commerciale.
+L'Offrant ne peut retirer les autorisations concédées par la licence tant que
+vous appliquez les termes de cette licence. Vous devez créditer l'oeuvre 
+(en utilisant l'IRI de l'ontologie originale pour l'ontologie entière 
+et les IRIs originaux des termes individuels), intégrer un lien vers la licence 
+et indiquer si des modifications ont été effectuées à l'oeuvre.
+Vous devez indiquer ces informations par tous les moyens raisonnables, 
+sans toutefois suggérer que l'offrant vous soutient ou soutient 
+la façon dont vous avez utilisé son Oeuvre."""@fr ,
+                                                            """The SI Reference Point Ontology developed by the BIPM is
+licensed under CC-BY-3.0-IGO. You are free to share (copy and redistribute
+the material in any medium or format) and adapt (remix, transform, and
+build upon the material) for any purpose, even commercially, for any
+purpose, even commercially. The licensor cannot revoke these freedoms as
+long as you follow the license terms. You must give appropriate credit
+(by using the original ontology IRI for the whole ontology and original
+term IRIs for individual terms), provide a link to the license, and
+indicate if any changes were made. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or
+your use."""@en ,
+                                                            "Ontology, part of the SI reference point, covering the seven underpinning constants of the SI" ;
+                                               skos:prefLabel "SI Reference Point - Constants" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#hiddenLabel
+skos:hiddenLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasDatatype
+si:hasDatatype rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasDefiningResolution
+si:hasDefiningResolution rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasLeftUnitTerm
+si:hasLeftUnitTerm rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasNumericExponent
+si:hasNumericExponent rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasRightUnitTerm
+si:hasRightUnitTerm rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasSymbol
+si:hasSymbol rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasUnit
+si:hasUnit rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasUnitBase
+si:hasUnitBase rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasUpdatedDate
+si:hasUpdatedDate rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasValue
+si:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasValueAsString
+si:hasValueAsString rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/constants_abox.py
+<https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/constants_abox.py> rdf:type owl:NamedIndividual ,
+                                                                                                                                                   prov:Agent .
+
+
+###  https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/cuq_tbox.py
+<https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/cuq_tbox.py> rdf:type prov:Agent .
+
+
+###  https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq_data/si_constants.yaml
+<https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq_data/si_constants.yaml> rdf:type owl:NamedIndividual ,
+                                                                                                                                                        prov:Entity .
+
+
+###  https://si-digital-framework.org/SI/activities#constants_20260303103151Z.ttl_generation
+<https://si-digital-framework.org/SI/activities#constants_20260303103151Z.ttl_generation> rdf:type owl:NamedIndividual ,
+                                                                                                   prov:Activity ;
+                                                                                          prov:startedAtTime "2026-03-03T10:31:51+00:00"^^xsd:dateTime ;
+                                                                                          prov:wasAssociatedWith <https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/constants_abox.py> ,
+                                                                                                                 <https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/cuq_tbox.py> .
+
+
+###  https://si-digital-framework.org/SI/entities#constants_20260303103151Z.ttl
+<https://si-digital-framework.org/SI/entities#constants_20260303103151Z.ttl> rdf:type owl:NamedIndividual ,
+                                                                                      prov:Entity ;
+                                                                             prov:wasAttributedTo <https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/constants_abox.py> ,
+                                                                                                  <https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq/cuq_tbox.py> ;
+                                                                             prov:wasDerivedFrom <https://github.com/TheBIPM/SI-Reference-Point-2023/blob/e46202444e0aea2534679f620625af3f3fe1c3c4/src/si_ref_point/cuq_data/si_constants.yaml> ;
+                                                                             prov:wasGeneratedBy <https://si-digital-framework.org/SI/activities#constants_20260303103151Z.ttl_generation> .
+
+
+###  https://si-digital-framework.org/constants/AvogadroConstant
+constants:AvogadroConstant rdf:type owl:NamedIndividual ,
+                                    si:Constant ;
+                           skos:hiddenLabel "Avogadro" ;
+                           skos:prefLabel "Avogadro constant"@en ,
+                                          "constante d'Avogadro"@fr ;
+                           si:hasDatatype xsd:float ;
+                           si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM26-Res1> ;
+                           si:hasSymbol "${N_{\\rm{A}}}$" ;
+                           si:hasUnit [ rdf:type si:UnitPower ;
+                                        si:hasNumericExponent "-1"^^xsd:short ;
+                                        si:hasUnitBase units:mole
+                                      ] ;
+                           si:hasUpdatedDate "2019-05-20"^^xsd:date ;
+                           si:hasValue "6.0221406E23"^^xsd:float ;
+                           si:hasValueAsString "6.022 140 76 x 10²³" .
+
+
+###  https://si-digital-framework.org/constants/BoltzmannConstant
+constants:BoltzmannConstant rdf:type owl:NamedIndividual ,
+                                     si:Constant ;
+                            skos:hiddenLabel "Boltzmann" ;
+                            skos:prefLabel "Boltzmann constant"@en ,
+                                           "constante de Boltzmann"@fr ;
+                            si:hasDatatype xsd:float ;
+                            si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM26-Res1> ;
+                            si:hasSymbol "${k}$" ;
+                            si:hasUnit [ rdf:type si:UnitProduct ;
+                                         si:hasLeftUnitTerm units:joule ;
+                                         si:hasRightUnitTerm [ rdf:type si:UnitPower ;
+                                                               si:hasNumericExponent "-1"^^xsd:short ;
+                                                               si:hasUnitBase units:kelvin
+                                                             ]
+                                       ] ;
+                            si:hasUpdatedDate "2019-05-20"^^xsd:date ;
+                            si:hasValue "1.380649E-23"^^xsd:float ;
+                            si:hasValueAsString "1.380 649 x 10⁻²³" .
+
+
+###  https://si-digital-framework.org/constants/ElementaryCharge
+constants:ElementaryCharge rdf:type owl:NamedIndividual ,
+                                    si:Constant ;
+                           skos:hiddenLabel "ElementaryCharge" ;
+                           skos:prefLabel "charge élementaire"@fr ,
+                                          "elementary charge"@en ;
+                           si:hasDatatype xsd:float ;
+                           si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM26-Res1> ;
+                           si:hasSymbol "${e}$" ;
+                           si:hasUnit units:coulomb ;
+                           si:hasUpdatedDate "2019-05-20"^^xsd:date ;
+                           si:hasValue "1.6021766E-19"^^xsd:float ;
+                           si:hasValueAsString "1.602 176 634 x 10⁻¹⁹" .
+
+
+###  https://si-digital-framework.org/constants/HyperfineTransitionFrequencyOfCs-133
+constants:HyperfineTransitionFrequencyOfCs-133 rdf:type owl:NamedIndividual ,
+                                                        si:Constant ;
+                                               skos:hiddenLabel "HyperfineSplitting" ;
+                                               skos:prefLabel "fréquence de la transition hyperfine du césium"@fr ,
+                                                              "hyperfine transition frequency of Cs-133"@en ;
+                                               si:hasDatatype xsd:integer ;
+                                               si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM13-Res1> ;
+                                               si:hasSymbol "$\\Delta\\nu_{\\rm{Cs}}$" ;
+                                               si:hasUnit units:hertz ;
+                                               si:hasUpdatedDate "1967-10-13"^^xsd:date ;
+                                               si:hasValue 9192631770 ;
+                                               si:hasValueAsString "9 192 631 770" .
+
+
+###  https://si-digital-framework.org/constants/LuminousEfficacy
+constants:LuminousEfficacy rdf:type owl:NamedIndividual ,
+                                    si:Constant ;
+                           skos:hiddenLabel "LuminousEfficacy" ;
+                           skos:prefLabel "efficacité lumineuse"@fr ,
+                                          "luminous efficacy"@en ;
+                           si:hasDatatype xsd:integer ;
+                           si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM16-Res3> ;
+                           si:hasSymbol "${K_{\\rm{cd}}}$" ;
+                           si:hasUnit [ rdf:type si:UnitProduct ;
+                                        si:hasLeftUnitTerm units:lumen ;
+                                        si:hasRightUnitTerm [ rdf:type si:UnitPower ;
+                                                              si:hasNumericExponent "-1"^^xsd:short ;
+                                                              si:hasUnitBase units:watt
+                                                            ]
+                                      ] ;
+                           si:hasUpdatedDate "1979-10-11"^^xsd:date ;
+                           si:hasValue 683 ;
+                           si:hasValueAsString "683" .
+
+
+###  https://si-digital-framework.org/constants/PlanckConstant
+constants:PlanckConstant rdf:type owl:NamedIndividual ,
+                                  si:Constant ;
+                         skos:hiddenLabel "Planck" ;
+                         skos:prefLabel "Planck constant"@en ,
+                                        "constante de Planck"@fr ;
+                         si:hasDatatype xsd:float ;
+                         si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM26-Res1> ;
+                         si:hasSymbol "${h}$" ;
+                         si:hasUnit [ rdf:type si:UnitProduct ;
+                                      si:hasLeftUnitTerm units:joule ;
+                                      si:hasRightUnitTerm units:second
+                                    ] ;
+                         si:hasUpdatedDate "2019-05-20"^^xsd:date ;
+                         si:hasValue "6.62607E-34"^^xsd:float ;
+                         si:hasValueAsString "6.626 070 15 x 10⁻³⁴" .
+
+
+###  https://si-digital-framework.org/constants/SpeedOfLight
+constants:SpeedOfLight rdf:type owl:NamedIndividual ,
+                                si:Constant ;
+                       skos:hiddenLabel "SpeedOfLight" ;
+                       skos:prefLabel "speed of light"@en ,
+                                      "vitesse de la lumière dans le vide"@fr ;
+                       si:hasDatatype xsd:integer ;
+                       si:hasDefiningResolution <https://si-digital-framework.org/bodies/CGPM#CGPM15-Res2> ;
+                       si:hasSymbol "$c$" ;
+                       si:hasUnit [ rdf:type si:UnitProduct ;
+                                    si:hasLeftUnitTerm units:metre ;
+                                    si:hasRightUnitTerm [ rdf:type si:UnitPower ;
+                                                          si:hasNumericExponent "-1"^^xsd:short ;
+                                                          si:hasUnitBase units:second
+                                                        ]
+                                  ] ;
+                       si:hasUpdatedDate "1975-06-03"^^xsd:date ;
+                       si:hasValue 299792458 ;
+                       si:hasValueAsString "299 792 458" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
